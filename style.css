@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Riot&display=swap');
+
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Protest Riot';
+}
+
+.navbar
+{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:15px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.mode
+{
+  display: none;
+}
+.btnmode
+{
+  cursor: pointer;
+  padding:6px 10px;
+  border-radius: 8px;
+  border:none;
+  background-color: lightgray;
+}
+
+.navbar-links
+{
+  display: flex;
+  column-gap: 20px;
+}
+
+.navbar-links a
+{
+  text-decoration: none;
+  color:black;
+}
+.navbar-links a:hover
+{
+  text-decoration:underline rgb(42, 42, 200) 3px;
+}
+
+.navbar-menu-toogle
+{
+  display: none;
+}
+.side-navbar
+{
+  background-color:#1d232C ;
+  width:50%;
+  height:100%;
+  position:fixed;
+  z-index:100;
+  top:0;
+  left:-60%;
+  padding:20px;
+  color:white;
+  transition: 1s;
+}
+.side-navbar .cross
+{
+  cursor: pointer;
+  text-align: right;
+}
+.side-navbar-link
+{
+  margin-bottom:30px;
+}
+.side-navbar-links a
+{
+   text-decoration: none;
+   color:white;
+}
+
+.side-navbar-links a:hover
+{
+  text-decoration: underline rgb(42, 42, 200) 3px;
+}
+
+/* Header */
+.header
+{
+  /* background-color: yellowgreen; */
+  padding:30px 0;
+  display:flex;
+  justify-content:center;
+  gap:50px;
+}
+
+.header-btn
+{
+  border-radius: 6px;
+  padding:10px 20px;
+  margin-top:30px;
+  cursor: pointer;
+  background-color: black;
+  color:white;
+  border: none;
+  transition: background-color 0.3s ,color 0.3s;
+}
+
+.header-btn:hover
+{
+  border: 1px solid black;
+  color:black;
+  background-color: white;
+ 
+}
+
+.service
+{
+  padding:10px 20px;
+}
+
+.service-container-1
+{
+  /* background-color: gold; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:5px;
+}
+
+.service-container-2
+{
+  padding:10px;
+  display: flex;
+  column-gap: 10px;
+}
+.box
+{
+  background-color:lightgrey;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+}
+
+.new-arrivals
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.new-arrival-container
+{
+  position: relative;
+  flex-basis: 20%;
+}
+
+.new-arrival-container img
+{
+  width:230px;
+  height:300px;
+  padding:5px;
+  border:1px solid lightgrey;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: opacity 0.2s;
+  opacity:0.9;
+  cursor: pointer;
+}
+.new-arrival-container img:hover
+{
+  opacity:1;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+}
+
+.new-arrivals button
+{
+  border:none;
+  padding:5% 10%;
+  border:none;
+  margin-top: 10px;
+  color:white;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 6px;
+  position: absolute;
+  bottom:10%;
+  left:25%;
+}
+.new-arrivals button:hover
+{
+  border: 1px solid black;
+  color:black;
+  background-color: white;
+  border-radius: 6px;
+}
+.newarrival h2
+{
+  text-align: center;
+  padding:10px 0;
+}
+.news
+{
+  padding:10px 0;
+  text-align: center;
+}
+
+.news h2
+{
+  font-size: 30px;
+  padding:8px 0px;
+}
+
+.news input
+{
+  padding:11px;
+  width:80vw;
+  margin:5px 0;
+  border:3px solid black;
+}
+
+.footer
+{
+  padding:10px 0;
+  margin-top: 15px;
+  text-align: center;
+  width:100%;
+  background-color: rgb(37, 37, 37);
+  color:white;
+}
+
+.footer-icon
+{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  column-gap:30px;
+}
+.footer-icon i
+{
+  margin:10px 0;
+  font-size: 24px;
+}
+.footer-icon .insta:hover
+{
+  color:purple;
+}
+.footer-icon .post:hover
+{
+  color:rgb(59, 112, 228);
+}
+.footer-icon .tweet:hover
+{
+  color:rgb(31, 97, 238);
+}
+
+.searchbar
+{
+  text-align: center;
+  margin:20px 0px;
+}
+.searchbar input
+{
+  font-size: 16px;
+  width:80%;
+  padding:8px 16px;
+  border-radius: 20px;
+  border:none;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.6);
+}
+.searchbar input:focus
+{
+  outline: none;
+}
+
+.new-arrival-container p
+{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.collection-items
+{
+  margin-top: 15px;
+}
+
+/* Contact */
+
+.contact-container
+{
+  background-color: rgb(6, 6, 46);
+  color:white;
+  /* text-align: center; */
+  width:50%;
+  padding:20px 50px 50px 50px;
+  margin:50px auto;
+  border-radius: 16px;
+}
+
+.contact-container h2
+{
+  text-align: center;
+  padding:15px 0px;
+}
+.box1 label
+{
+  font-size: 18px;
+}
+.box1 input
+{
+  border:none;
+  border-radius: 8px;
+  font-size: 16px;
+  padding:10px;
+  width:100%;
+  margin: 10px 0;
+}
+.box1 input:focus
+{
+  outline:none;
+}
+.box1 textarea
+{
+  width:100%;
+  padding:10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.box1 textarea:focus
+{
+  outline:none;
+}
+
+.submit-btn
+{
+  font-size: 18px;
+  border-radius: 8px;
+  text-align: center;
+  color:rgb(6, 6, 46);
+  border: none;
+  background-color:white;
+  cursor: pointer;
+  padding:8px 20px;
+  margin:10px 0px;
+  font-family: 'Protest Riot';
+}
+/* MEDIA QUERY */
+@media screen and (max-width:750px)
+{
+.theme-btn
+{
+  display: none;
+}
+.mode
+{
+  display: block;
+}
+  .navbar-menu-toogle
+{
+  display: block;
+}
+
+.navbar-links
+{
+  display: none;
+}
+.navbar-menu-toogle i
+{
+  cursor: pointer;
+}
+.header
+{
+  padding:30px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.image
+
+{
+  opacity: 0.8;
+}
+.header-content
+{
+  position: absolute;
+  bottom:60px;
+  z-index:10;
+}
+.header-content h1
+{
+  font-size:30px;
+  margin-bottom: 10px;
+}
+.header-img
+{
+  width:100%;
+}
+.header-img .image
+{
+  width: 100%;
+}
+.header-btn
+{
+  margin-top: 8px;
+}
+.service-container-1,
+.service-container-2
+{
+  margin-top:5px;
+  padding:5px;
+  flex-direction: column;
+  gap:20px;
+}
+
+.box{
+  text-align: center;
+  padding:25px;
+}
+}
+
