@@ -287,10 +287,10 @@
 
 .contact-container
 {
-  background-color: rgb(6, 6, 46);
+  background-color: #06062e;
   color:white;
   /* text-align: center; */
-  width:50%;
+  width:60%;
   padding:20px 50px 50px 50px;
   margin:50px auto;
   border-radius: 16px;
@@ -413,6 +413,11 @@
   padding:5px;
   flex-direction: column;
   gap:20px;
+}
+
+.contact-container
+{
+  width:80%;
 }
 
 .box{
